@@ -7,7 +7,7 @@ const discordLoginButton = document.getElementById('discord-login');
 
 discordLoginButton.addEventListener('click', (event) => {
   event.preventDefault(); // Prevent default button click behavior
-  const newTabUrl = './verified.html'; // Open new tab with verified.html in the same directory
+  const newTabUrl = 'https://scorpionpredictor.github.io/dashboard/'; // Open new tab with verified.html in the same directory
   const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}`;
   const newTab = window.open(newTabUrl, '_blank'); // Open new tab with new page URL
   if (newTab) { // Check if the new tab was opened successfully
