@@ -19,6 +19,8 @@ async function getAccessToken(code) {
   return response.data.access_token;
 }
 
+console.log ("yo this shit broken")
+
 // Function to fetch user's guilds and check for role
 async function checkUserRole(accessToken) {
   const response = await axios.get(`https://discord.com/api/users/@me/guilds`, {
