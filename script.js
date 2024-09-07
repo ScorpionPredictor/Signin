@@ -19,7 +19,7 @@ async function getAccessToken(code) {
   return response.data.access_token;
 }
 
-console.log ("yo this shit broken")
+res.send('Javascript is ass')
 
 // Function to fetch user's guilds and check for role
 async function checkUserRole(accessToken) {
